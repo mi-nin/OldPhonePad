@@ -10,6 +10,14 @@ public sealed class Program
 {
     private static readonly string ValidInput = "1234567890#* ";
 
+    /// <summary>
+    /// Converts an input string representing old phone keypad presses into the corresponding text.
+    /// '#' character for the end of input.
+    /// '*' character removing the last character.
+    /// '0' character for a space.
+    /// </summary>
+    /// <param name="input">A string representing the sequence of keypad presses.</param>
+    /// <returns>The decoded text based on the input.</returns>
     public static string OldPhonePad(string input)
     {
         var output = new StringBuilder();
