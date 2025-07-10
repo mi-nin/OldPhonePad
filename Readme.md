@@ -21,9 +21,30 @@ OldPhonePad(“227\*#”) => output: B
 OldPhonePad(“4433555 555666#”) => output: HELLO
 ```
 
+## Key Mapping Table
+
+This table shows the mapping of keypad numbers to characters:
+
+| Key | Characters |
+|------|------------|
+| 1    | &'(        |
+| 2    | ABC        |
+| 3    | DEF        |
+| 4    | GHI        |
+| 5    | JKL        |
+| 6    | MNO        |
+| 7    | PQRS       |
+| 8    | TUV        |
+| 9    | WXYZ       |
+| 0    | space      |
+| *    | remove     |
+| #    | input end  |
+
 ## Prerequisites
 
-[.NET 8 SDK] download here https://dotnet.microsoft.com/en-us/download/dotnet/8.0.
+Before running the application, ensure you have:
+
+- **.NET 8.0 SDK** - [Download here](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 ## How to Run
 
