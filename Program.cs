@@ -23,6 +23,7 @@ public sealed class Program
         var output = new StringBuilder();
         while (!input.Equals('#') || !string.IsNullOrEmpty(input))
         {
+            //find last index of occerecnce charactor;
             var lastOccerecnceCharIndex = input.Select((c, i) => new
                 {
                     Charactor = c,
@@ -34,6 +35,7 @@ public sealed class Program
                 break;
             }
 
+            //Build output string
             if (input[0].Equals('*'))
             {
                 output.RemoveLast(lastOccerecnceCharIndex.Index);
