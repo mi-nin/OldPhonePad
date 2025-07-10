@@ -20,3 +20,15 @@ OldPhonePad(“33#”) => output: E
 OldPhonePad(“227\*#”) => output: B
 OldPhonePad(“4433555 555666#”) => output: HELLO
 ```
+
+## Prerequisites
+
+[.NET 8 SDK] download here https://dotnet.microsoft.com/en-us/download/dotnet/8.0.
+
+## How to Run
+
+Open the `.sln` file in Visual Studio and press F5 to run the console app.
+
+## or
+```bash
+dotnet run
