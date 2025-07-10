@@ -1,0 +1,64 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated\_Files/
+
+# VS Code settings
+.vscode/
+
+# Rider settings
+.idea/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+# Uncomment if using package restore
+#packages/
+
+# DotCover
+*.dotCover
+
+# Logs
+*.log
+
+# Others
+*.DS_Store
+*.vs/
+*.dbmdl
+*.bak
+*.tmp
+
+# ASP.NET-specific
+appsettings.Development.json
+appsettings.Local.json
+
+# Secrets
+secrets.json
+
+# Global JetBrains Rider files
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# macOS system files
+.DS_Store
+
+# Visual Studio for Mac
+.vscode/
+.vscode/*
