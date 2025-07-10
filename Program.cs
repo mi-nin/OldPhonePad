@@ -118,6 +118,12 @@ public sealed class Program
         Console.WriteLine($"OldPhonePad(“227*#”) => output: {OldPhonePad("227*#")}");
         Console.WriteLine($"OldPhonePad(“4433555 555666#”) => output: {OldPhonePad("4433555 555666#")}");
         Console.WriteLine($"OldPhonePad(“8 88777444666*664#”) => output: {OldPhonePad("8 88777444666*664#")}");
+        Console.WriteLine($"OldPhonePad(“123**123#”) => output: {OldPhonePad("123**123#")}");
+        Console.WriteLine($"OldPhonePad(“120000001155657777 23444**#”) => output: {OldPhonePad("120000001155657777 23444**#")}");
+        Console.WriteLine($"OldPhonePad(“1122**************#”) => output: {OldPhonePad("1122**************#")}");
+        Console.WriteLine($"OldPhonePad(“123**1#”) => output: {OldPhonePad("123**1#")}");
+        Console.WriteLine($"OldPhonePad(“12300**1#”) => output: {OldPhonePad("12300**1#")}");
+        Console.WriteLine($"OldPhonePad(“12300**1#”) => output: {OldPhonePad("111 11**1#")}");
         Console.WriteLine();
         Console.WriteLine("---------------------------------------");
         Console.WriteLine();
