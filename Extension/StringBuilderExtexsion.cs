@@ -11,7 +11,7 @@ public static class StringBuilderExtexsion
         return builder.Remove(builder.Length - 1 , 1);
     }
 
-    //override of RemoveLast with range.
+    //overload of RemoveLast with range.
     //remove last append with index out of range handle.
     public static StringBuilder RemoveLast(this StringBuilder builder, int occerence)
     {
