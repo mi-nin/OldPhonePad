@@ -32,6 +32,8 @@ public static class PadInputHelper
         var valueIndex = (occerenceChars.Length - 1) % group.Length;
         return group[valueIndex];
     }
+    
+    //find Open and Close Bracket by counting
     public static char GetOpenCloseBracket(string value)
     {
         var openBracket = value.Count(v => v == '(');

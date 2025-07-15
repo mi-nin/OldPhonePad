@@ -25,10 +25,10 @@ public sealed class Program
         {
             //find last index of occerecnce charactor;
             var lastOccerecnceCharIndex = input.Select((c, i) => new
-                {
-                    Charactor = c,
-                    Index = i,
-                }).FirstOrDefault(c => !c.Charactor.Equals(input[0]));
+            {
+                Charactor = c,
+                Index = i,
+            }).FirstOrDefault(c => !c.Charactor.Equals(input[0]));
 
             if (lastOccerecnceCharIndex == null)
             {
@@ -88,7 +88,8 @@ public sealed class Program
     private static string? ReadInput()
     {
         var input = new StringBuilder();
-        while (true) {
+        while (true)
+        {
             var key = Console.ReadKey(true);
             if (key.Key == ConsoleKey.Escape)
             {
