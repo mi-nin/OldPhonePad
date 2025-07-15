@@ -26,19 +26,19 @@ OldPhonePad(“4433555 555666#”) => output: HELLO
 This table shows the mapping of keypad numbers to characters:
 
 | Key | Characters |
-|------|------------|
-| 1    | &'(        |
-| 2    | ABC        |
-| 3    | DEF        |
-| 4    | GHI        |
-| 5    | JKL        |
-| 6    | MNO        |
-| 7    | PQRS       |
-| 8    | TUV        |
-| 9    | WXYZ       |
-| 0    | space      |
-| *    | remove     |
-| #    | input end  |
+| --- | ---------- |
+| 1   | &'(        |
+| 2   | ABC        |
+| 3   | DEF        |
+| 4   | GHI        |
+| 5   | JKL        |
+| 6   | MNO        |
+| 7   | PQRS       |
+| 8   | TUV        |
+| 9   | WXYZ       |
+| 0   | space      |
+| \*  | remove     |
+| #   | input end  |
 
 ## Prerequisites
 
@@ -48,8 +48,38 @@ Before running the application, ensure you have:
 
 ## How to Run
 
-Open the `.sln` file in Visual Studio and press F5 to run the console app.
+### Option 1: Visual Studio
 
-## or
+1. Open the `.sln` file in Visual Studio
+2. Press `F5` to run the console app
+
+### Option 2: Command Line
+
 ```bash
-dotnet run
+# Navigate to the solution directory
+cd OldPhonePad
+
+# Run the application
+dotnet run --project OldPhonePad
+
+# Or build and run
+dotnet build
+dotnet run --project OldPhonePad
+```
+
+## Testing
+
+This project includes unit tests using xUnit framework.
+
+### Running Tests
+
+```bash
+# Run all tests
+dotnet test
+
+# Run tests with detailed output
+dotnet test --verbosity normal
+
+# Run tests in specific project
+dotnet test OldPhonePad.Tests
+```
