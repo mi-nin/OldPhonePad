@@ -35,6 +35,12 @@ public sealed class Program
                 break;
             }
 
+            if (input[0] == ' ')
+            {
+                input = input.Substring(lastOccerecnceCharIndex.Index);
+                continue;
+            }
+
             //Build output string
             if (input[0].Equals('*'))
             {
@@ -44,13 +50,15 @@ public sealed class Program
             {
                 output.Append(' ', lastOccerecnceCharIndex.Index);
             }
-            else
+
+            var occerecnceChars = input.Substring(0, lastOccerecnceCharIndex.Index);
+            var value = PadInputHelper.GetPadValueByOccerenceCharactors(occerecnceChars);
+            if (value == '(')
             {
-                var occerecnceChars = input.Substring(0, lastOccerecnceCharIndex.Index);
-                var value = PadInputHelper.GetPadValueByOccerenceCharactors(occerecnceChars);
-                output.Append(value);
+                value = PadInputHelper.GetOpenCloseBracket(output.ToString());
             }
 
+            output.Append(value);
             input = input.Substring(lastOccerecnceCharIndex.Index);
         }
 
