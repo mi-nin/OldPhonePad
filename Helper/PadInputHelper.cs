@@ -20,16 +20,28 @@ public static class PadInputHelper
     };
 
     //find decoded charactor from occerence charactor
-    public static char GetPadValueByOccerenceCharactors(string occerenceChars)
+    public static char? GetPadValueByOccerenceCharactors(string occerenceChars)
     {
         //error handle for wrong input the return empty charactor.
         if (occerenceChars.Length == 0 || !padInputKeyValue.TryGetValue(occerenceChars[0], out var group))
         {
-            return '\0';
+            return null;
         }
 
         //find index of decoded value following repeat times using % to prevent index out of range.
         var valueIndex = (occerenceChars.Length - 1) % group.Length;
         return group[valueIndex];
+    }
+    public static char GetOpenCloseBracket(string value)
+    {
+        var openBracket = value.Count(v => v == '(');
+        var closeBracket = value.Count(v => v == ')');
+
+        if (openBracket > closeBracket)
+        {
+            return ')';
+        }
+
+        return '(';
     }
 }
